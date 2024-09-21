@@ -1,13 +1,17 @@
 import { useState } from "react";
 import "./App.css";
-import { Button } from "./components/ui/button";
+import Header from "./components/Header";
+import SideNavbar from "./components/SideNavbar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Button>Click me</Button>
+      <Header />
+      <div className="md:w-64 w-16 fixed ">
+        <SideNavbar/>
+      </div>
     </>
   );
 }
